@@ -71,7 +71,7 @@ AI-developer-companion/
 
 ## Screenshot
 
-Here is an example of the application after analyzing a code sample:
+Here is an example of the application:
 
 ![AI Developer Companion Screenshot](image.png)
 
