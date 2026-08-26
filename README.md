@@ -67,9 +67,11 @@ AI-developer-companion/
 ├── package-lock.json
 ├── .gitignore
 └── README.md
+```
 
 ## Screenshot
 
 Here is an example of the application after analyzing a code sample:
 
 ![AI Developer Companion Screenshot](image.png)
+
