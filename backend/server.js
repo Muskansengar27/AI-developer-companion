@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 const cors = require('cors');
 const { GoogleGenAI } = require('@google/genai');
 require('dotenv').config();
@@ -22,6 +23,11 @@ function sanitizeGeminiErrorMessage(error) {
 
 app.use(cors());
 app.use(express.json());
+app.use(express.static(path.join(__dirname, '..', 'frontend')));
+
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, '..', 'frontend', 'index.html'));
+});
 
 app.get('/api/health', (req, res) => {
   res.json({

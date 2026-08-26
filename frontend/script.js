@@ -67,7 +67,11 @@ analyzeButton.addEventListener('click', async () => {
   temporaryMessage.textContent = 'Analyzing your code...';
 
   try {
-    const response = await fetch('http://localhost:5000/api/analyze', {
+    const apiBaseUrl = window.location.hostname === 'localhost'
+    ? 'http://localhost:5000'
+    : '';
+
+    const response = await fetch(`${apiBaseUrl}/api/analyze`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
