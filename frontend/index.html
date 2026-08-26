@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Developer Companion</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="page-header">
+      <div class="brand-mark" aria-hidden="true">&lt;/&gt;</div>
+      <div>
+        <p class="eyebrow">Developer workspace</p>
+        <h1>AI Developer Companion</h1>
+        <p class="subtitle">A focused space to understand, refine, and document your code.</p>
+      </div>
+    </header>
+
+    <section class="workspace" aria-labelledby="editor-heading">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Code review</p>
+          <h2 id="editor-heading">Bring your code into focus</h2>
+        </div>
+        <label class="language-picker">
+          <span>Language</span>
+          <select id="language" name="language">
+            <option>JavaScript</option>
+            <option>Python</option>
+            <option>Java</option>
+            <option>C++</option>
+            <option>C</option>
+          </select>
+        </label>
+      </div>
+
+      <label class="sr-only" for="code-input">Code to analyze</label>
+      <textarea id="code-input" placeholder="Paste your code here..."></textarea>
+      <div class="editor-footer">
+        <span class="editor-hint">Ready when you are.</span>
+        <button id="analyze-button" type="button">Analyze Code <span aria-hidden="true">&#8594;</span></button>
+      </div>
+    </section>
+
+    <section class="results" aria-labelledby="results-heading">
+      <div class="results-heading">
+        <div>
+          <p class="eyebrow">Your review</p>
+          <h2 id="results-heading">Results</h2>
+        </div>
+        <span class="status-dot">Awaiting analysis</span>
+      </div>
+      <div id="temporary-message" class="temporary-message" role="status" aria-live="polite">
+        Add code above to begin your review.
+      </div>
+      <div class="result-grid">
+        <article class="result-card">
+          <span class="card-number">01</span>
+          <h3>Code Explanation</h3>
+          <p>Understand what your code is doing, step by step.</p>
+        </article>
+        <article class="result-card">
+          <span class="card-number">02</span>
+          <h3>Issues Found</h3>
+          <p>Spot bugs, risks, and areas that need attention.</p>
+        </article>
+        <article class="result-card">
+          <span class="card-number">03</span>
+          <h3>Improvements</h3>
+          <p>Find practical ways to make your code clearer.</p>
+        </article>
+        <article class="result-card">
+          <span class="card-number">04</span>
+          <h3>Test Cases</h3>
+          <p>Explore scenarios that help validate your implementation.</p>
+        </article>
+        <article class="result-card">
+          <span class="card-number">05</span>
+          <h3>Documentation</h3>
+          <p>Build a useful reference for the code you maintain.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "name": "ai-developer-companion",
+  "version": "1.0.0",
+  "description": "AI-powered developer assistant for code explanation, analysis, improvement, testing, and documentation.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Muskansengar27/AI-developer-companion.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Muskansengar27/AI-developer-companion/issues"
+  },
+  "homepage": "https://github.com/Muskansengar27/AI-developer-companion#readme",
+  "dependencies": {
+    "@google/genai": "^2.18.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1"
+  }
+}
